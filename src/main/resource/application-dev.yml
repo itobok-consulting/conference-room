@@ -1,0 +1,20 @@
+server:
+  port: 8081
+  servlet:
+    context-path: /conference-room
+
+spring:
+  application:
+    name: conference-room-service
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  h2:
+    console:
+      enabled: true
+  datasource:
+    initialize: true
+    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=- 1;DB_CLOSE_ON_EXIT=FALSE
+    username: sa
+    password:
+    driverClassName: org.h2.Driver
