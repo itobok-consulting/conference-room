@@ -38,8 +38,8 @@ This API uses in memory H2 database and it can be viewed running this link http:
 1. checkout the project from repo
 2. goto the folder where it saved
 3. from command line:
-   compiled the project : mvn clean install
-   to build the project : mvn spring-boot:run
+   compile : mvn clean install
+   build the project : mvn spring-boot:run
 
 -- From the COMMAND
 
