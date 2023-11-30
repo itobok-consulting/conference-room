@@ -45,4 +45,24 @@ This API uses in memory H2 database and it can be viewed running this link http:
 
 java -jar target/conference-room-service-0.0.01-SNAPSHOT.jar
 
+########### Postman curls to test the application ###########  
+
+* Book conference room:
+
+curl --location 'http://localhost:8081/conference-room/book-conference-room' \
+--header 'Content-Type: application/json' \
+--data '{
+    "startTime": "02:01",
+    "endTime": "02:14",
+    "numberOfPeopleAttending": "15"
+}'
+
+* List Available rooms:
+  
+url --location 'http://localhost:8081/conference-room/02:01/list-rooms/02:04' \
+--data ''
+
+
+
+
 
